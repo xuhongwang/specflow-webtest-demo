@@ -3,7 +3,9 @@
 	As a beginner
 	I want to be create a specflow demo
 
-@mytag
+@Chrome
+@Firefox
+@Edge
 Scenario: Search keyword on JD
 	Given I visit JD website
 	And I have entered "Dell" into the search box

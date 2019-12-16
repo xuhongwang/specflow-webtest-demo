@@ -73,14 +73,20 @@ namespace SpecflowWebTestDemo.Features
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Search keyword on JD", new string[] {
-                "mytag"}, SourceLine=6)]
+                "Chrome",
+                "Firefox",
+                "Edge"}, SourceLine=8)]
         public virtual void SearchKeywordOnJD()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
+                    "Chrome",
+                    "Firefox",
+                    "Edge"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search keyword on JD", null, new string[] {
-                        "mytag"});
-#line 7
+                        "Chrome",
+                        "Firefox",
+                        "Edge"});
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -100,16 +106,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
+#line 10
  testRunner.Given("I visit JD website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 11
  testRunner.And("I have entered \"Dell\" into the search box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 12
  testRunner.When("I press search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 11
+#line 13
  testRunner.Then("the result should be \"戴尔京东自营官方旗舰店\" on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
